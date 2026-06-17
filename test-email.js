@@ -25,12 +25,12 @@ async function testEmail() {
             from: process.env.EMAIL_USER,
             to: process.env.EMAIL_USER, // Send to yourself for testing
             subject: 'Test Email from Classroom Notifier',
-            html: '<h1>✅ Test Successful!</h1><p>If you see this, your email configuration is working.</p>'
+            html: '<h1>--Test Successful!--</h1><p>If you see this, your email configuration is working.</p>'
         });
-        console.log('✅ Email sent successfully!');
+        console.log('Email sent successfully!');
         console.log('Message ID:', info.messageId);
     } catch (error) {
-        console.error('❌ Error sending email:', error.message);
+        console.error('Error sending email:', error.message);
         console.error('Full error:', error);
     }
 }
